@@ -1,0 +1,20 @@
+<header class="site-header" id="site-header">
+  <div class="container nav-container">
+    <a href="/" class="logo-link">
+      <img src="/images/logo.svg" alt="Dean Guida Logo" class="site-logo" />
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <ul>
+        <li><a href="#book">About the Book</a></li>
+        <li><a href="#praise">Praise</a></li>
+        <li><a href="#author">About the Author</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="{{ .Site.Params.podcastURL }}" target="_blank" rel="noopener">Podcast</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

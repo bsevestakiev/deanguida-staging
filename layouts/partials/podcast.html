@@ -1,0 +1,16 @@
+<section class="podcast-section bg-gradient-animated">
+  <div class="container podcast-container">
+    <div class="podcast-left">
+      <a href="{{ .Site.Params.podcastURL }}" target="_blank" rel="noopener">
+        <img src="/images/podcast-banner.png" alt="{{ .Params.podcast.heading }}" class="podcast-banner" />
+      </a>
+    </div>
+    <div class="podcast-right">
+      <h2>{{ .Params.podcast.heading }}</h2>
+      <p>{{ .Params.podcast.description }}</p>
+      <a href="{{ .Site.Params.podcastURL }}" target="_blank" rel="noopener" class="btn btn-yellow">{{ .Params.podcast.listen_button }}</a>
+      <p class="podcast-guest-cta">{{ .Params.podcast.guest_cta }}</p>
+      <a href="{{ .Site.Params.podcastGuestURL }}" target="_blank" rel="noopener" class="btn btn-teal">{{ .Params.podcast.guest_button }}</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ .Site.Title }}</title>
+<meta name="description" content="{{ .Site.Params.description }}" />
+<link rel="stylesheet" href="/css/main.css" />
+{{ if .Site.Config.Services.GoogleAnalytics.ID }}
+{{ template "_internal/google_analytics.html" . }}
+{{ end }}
+<!-- Adobe Typekit (acumin-pro-wide) + Google Fonts fallback -->
+<link rel="stylesheet" href="https://use.typekit.net/jqx2die.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet" />

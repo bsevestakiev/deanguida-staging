@@ -1,0 +1,23 @@
+<section class="booksellers-section">
+  <div class="container booksellers-container">
+    <h3>{{ .Params.booksellers.heading }}</h3>
+    <p class="release-date">{{ .Params.booksellers.release_date }}</p>
+    <div class="bookseller-logos">
+      <a href="{{ .Site.Params.amazonURL }}" target="_blank" rel="noopener">
+        <img src="/images/booksellers/amazon.svg" alt="Amazon.com" />
+      </a>
+      <a href="{{ .Site.Params.bnURL }}" target="_blank" rel="noopener">
+        <img src="/images/booksellers/bn.svg" alt="Barnes and Noble" />
+      </a>
+      <a href="{{ .Site.Params.bamURL }}" target="_blank" rel="noopener">
+        <img src="/images/booksellers/bam.svg" alt="Books A Million" />
+      </a>
+      <a href="{{ .Site.Params.bookshopURL }}" target="_blank" rel="noopener">
+        <img src="/images/booksellers/bookshop.svg" alt="Bookshop.org" />
+      </a>
+      <a href="{{ .Site.Params.porchlightURL }}" target="_blank" rel="noopener">
+        <img src="/images/booksellers/porchlight.svg" alt="Porchlight" />
+      </a>
+    </div>
+  </div>
+</section>

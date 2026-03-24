@@ -1,0 +1,15 @@
+<section class="author-section" id="author">
+  <div class="container author-container">
+    <div class="author-text">
+      <h2>{{ .Params.author.heading }}</h2>
+      <h3>{{ .Params.author.name }}</h3>
+      {{ range .Params.author.paragraphs }}
+      <p>{{ . }}</p>
+      {{ end }}
+      <a href="{{ .Site.Params.slingshotURL }}" target="_blank" rel="noopener" class="btn btn-teal">{{ .Params.author.button }}</a>
+    </div>
+    <div class="author-image">
+      <img src="/images/author-photo.jpg" alt="{{ .Params.author.name }}" />
+    </div>
+  </div>
+</section>

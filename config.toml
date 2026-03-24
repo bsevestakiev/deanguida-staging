@@ -1,0 +1,21 @@
+baseURL = "https://staging.deanguida.com/"
+languageCode = "en-us"
+title = "Home - Book - Dean Guida"
+
+[services]
+  [services.googleAnalytics]
+    ID = "G-XXXXXXXXXX"   # Replace with your GA4 Measurement ID
+
+[params]
+  description = "When Grit Is Not Enough - An Entrepreneur's Playbook for Taking Your Business to the Next Level"
+  author = "Dean Guida"
+  amazonURL = "https://www.amazon.com/dp/1639090231"
+  bnURL = "https://www.barnesandnoble.com/w/book/1144564096?ean=9781639090235"
+  bamURL = "https://www.booksamillion.com/search2?query=Dean+Guida&filters[authors]=Dean+Guida"
+  bookshopURL = "https://bookshop.org/beta-search?keywords=%22dean+guida%22"
+  porchlightURL = "https://www.porchlightbooks.com/product/when-grit-is-not-enough--dean-guida/isbn/9781639090235"
+  podcastURL = "https://podcast.slingshotapp.io/"
+  podcastGuestURL = "https://podcast.slingshotapp.io/podcast-guest-application"
+  slingshotURL = "https://www.slingshotapp.io/"
+  contactFormAction = "https://formspree.io/f/YOUR_FORM_ID"
+  mailchimpURL = "https://YOUR_MAILCHIMP_FORM_URL"

@@ -1,0 +1,36 @@
+<section class="about-book-section" id="book">
+  <div class="container">
+
+    <div class="about-book-header">
+      <h2>{{ .Params.book.heading }}</h2>
+      <p class="tagline">{{ .Params.book.tagline }}<br/><span class="tagline-sub">{{ .Params.book.tagline_sub }}</span></p>
+    </div>
+
+    <div class="about-book-columns">
+      <div class="about-book-text">
+        {{ range .Params.book.paragraphs }}
+        <p>{{ . | markdownify }}</p>
+        {{ end }}
+      </div>
+      <div class="about-book-image">
+        <img src="/images/book-3d.png" alt="{{ .Params.hero.title }}" />
+      </div>
+    </div>
+
+    <p class="topics-intro">{{ .Params.book.topics_intro }}</p>
+    <div class="book-topics">
+      <ul class="topics-list">
+        {{ range .Params.book.topics_col1 }}<li>{{ . }}</li>{{ end }}
+      </ul>
+      <ul class="topics-list">
+        {{ range .Params.book.topics_col2 }}<li>{{ . }}</li>{{ end }}
+      </ul>
+      <ul class="topics-list">
+        {{ range .Params.book.topics_col3 }}<li>{{ . }}</li>{{ end }}
+      </ul>
+    </div>
+
+    <p class="about-book-closing">{{ .Params.book.closing }}</p>
+
+  </div>
+</section>

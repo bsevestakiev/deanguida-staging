@@ -1,0 +1,21 @@
+<section class="media-section" id="media">
+  <div class="container media-container">
+    <h2>{{ .Params.media.heading }}</h2>
+    <div class="media-grid">
+      {{ range .Site.Data.media }}
+      <div class="media-card">
+        <a href="{{ .url }}" target="_blank" rel="noopener" class="media-card-image-link">
+          <img src="{{ .image }}" alt="{{ .title }}" />
+        </a>
+        <div class="media-card-body">
+          <a href="{{ .url }}" target="_blank" rel="noopener">
+            <strong>{{ .title }}</strong>
+          </a>
+          <p class="media-date">{{ .date }}</p>
+          <a href="{{ .url }}" target="_blank" rel="noopener" class="read-more">Read More</a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

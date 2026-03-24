@@ -1,0 +1,19 @@
+- name: "Amazon"
+  key: "amazon"
+  image: "/images/booksellers/amazon.svg"
+
+- name: "Barnes and Noble"
+  key: "bn"
+  image: "/images/booksellers/bn.svg"
+
+- name: "Books A Million"
+  key: "bam"
+  image: "/images/booksellers/bam.svg"
+
+- name: "Bookshop.org"
+  key: "bookshop"
+  image: "/images/booksellers/bookshop.svg"
+
+- name: "Porchlight"
+  key: "porchlight"
+  image: "/images/booksellers/porchlight.svg"
