@@ -4,7 +4,7 @@ hero:
   subtitle: "An Entrepreneur's Playbook for Taking Your Business to the Next Level"
 
 subscribe:
-  heading: "Start Reading Now"
+  heading: "Start Reading Now!"
   subtext: "Subscribe below for a sneak peek and updates about *When Grit is Not Enough*."
 
 book:
