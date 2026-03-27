@@ -1,6 +1,17 @@
 baseURL = "https://staging.deanguida.com/"
-languageCode = "en-us"
-title = "Home - Book - Dean Guida"
+defaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    languageCode = "en-us"
+    languageName = "English"
+    title = "Home - Book - Dean Guida"
+    weight = 1
+  [languages.ja]
+    languageCode = "ja"
+    languageName = "日本語"
+    title = "ホーム - 書籍 - ディーン・グイダ"
+    weight = 2
 
 [services]
   [services.googleAnalytics]

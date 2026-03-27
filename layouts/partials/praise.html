@@ -1,8 +1,10 @@
 <section class="praise-section bg-gradient-animated" id="praise">
   <div class="container praise-container">
     <h2>{{ .Params.praise.heading }}</h2>
+    {{ $testimonials := .Site.Data.testimonials }}
+    {{ if eq .Site.Language.Lang "ja" }}{{ $testimonials = .Site.Data.ja.testimonials }}{{ end }}
     <div class="testimonial-carousel" id="testimonial-carousel">
-      {{ range $i, $t := .Site.Data.testimonials }}
+      {{ range $i, $t := $testimonials }}
       <div class="testimonial{{ if eq $i 0 }} active{{ end }}">
         <blockquote>{{ .quote }}</blockquote>
         <cite>
@@ -13,7 +15,7 @@
       {{ end }}
     </div>
     <div class="carousel-pager">
-      {{ range $i, $t := .Site.Data.testimonials }}
+      {{ range $i, $t := $testimonials }}
       <button class="pager-dot{{ if eq $i 0 }} active{{ end }}" data-index="{{ $i }}" aria-label="Testimonial {{ add $i 1 }}"></button>
       {{ end }}
     </div>

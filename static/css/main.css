@@ -13,8 +13,8 @@
   --gradient-animated: linear-gradient(270deg, #4799a2, #467fa0, #52678c, #384e75, #242a36);
 
   /* Typography - acumin-pro-wide from Typekit, Open Sans fallback */
-  --font-body: acumin-pro-wide, 'Open Sans', sans-serif;
-  --font-heading: acumin-pro-wide, 'Montserrat', sans-serif;
+  --font-body: acumin-pro-wide, 'Open Sans', 'Noto Sans JP', sans-serif;
+  --font-heading: acumin-pro-wide, 'Montserrat', 'Noto Sans JP', sans-serif;
 
   /* Spacing */
   --section-padding-xl: 100px 0;  /* bg-xl */
@@ -1030,4 +1030,19 @@ a { text-decoration: none; color: inherit; }
   .press-logos img {
     width: 100px;
   }
+}
+
+/* ===================== LANGUAGE SWITCHER ===================== */
+.lang-switch a {
+  font-size: 0.8rem;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 3px;
+  padding: 2px 8px !important;
+}
+
+/* ===================== JAPANESE TYPOGRAPHY ===================== */
+:lang(ja) {
+  font-family: 'Noto Sans JP', sans-serif;
+  word-break: break-all;
+  line-height: 1.9;
 }

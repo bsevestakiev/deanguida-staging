@@ -8,12 +8,13 @@
     </button>
     <nav class="site-nav" id="site-nav">
       <ul>
-        <li><a href="#book">About the Book</a></li>
-        <li><a href="#praise">Praise</a></li>
-        <li><a href="#author">About the Author</a></li>
-        <li><a href="#media">Media</a></li>
-        <li><a href="{{ .Site.Params.podcastURL }}" target="_blank" rel="noopener">Podcast</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#book">{{ i18n "nav_book" }}</a></li>
+        <li><a href="#praise">{{ i18n "nav_praise" }}</a></li>
+        <li><a href="#author">{{ i18n "nav_author" }}</a></li>
+        <li><a href="#media">{{ i18n "nav_media" }}</a></li>
+        <li><a href="{{ .Site.Params.podcastURL }}" target="_blank" rel="noopener">{{ i18n "nav_podcast" }}</a></li>
+        <li><a href="#contact">{{ i18n "nav_contact" }}</a></li>
+        <li class="lang-switch"><a href="{{ i18n "lang_switch_url" }}">{{ i18n "lang_switch_label" }}</a></li>
       </ul>
     </nav>
   </div>

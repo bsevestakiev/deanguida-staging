@@ -4,8 +4,8 @@
       <h1 class="hero-title">{{ .Params.hero.title | replaceRE "Grit" "<span class=\"text-mask\">Grit</span>" | replaceRE "Not" "<span class=\"text-mask\">Not</span>" | safeHTML }}</h1>
       <p class="hero-subtitle">{{ .Params.hero.subtitle }}</p>
       <div class="hero-buttons">
-        <a href="#book" class="btn btn-teal">Learn More</a>
-        <a href="{{ .Site.Params.amazonURL }}" target="_blank" rel="noopener" class="btn btn-yellow">BUY NOW</a>
+        <a href="#book" class="btn btn-teal">{{ i18n "btn_learn_more" }}</a>
+        <a href="{{ .Site.Params.amazonURL }}" target="_blank" rel="noopener" class="btn btn-yellow">{{ i18n "btn_buy_now" }}</a>
       </div>
     </div>
     <div class="hero-image">
