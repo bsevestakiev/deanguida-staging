@@ -1050,3 +1050,10 @@ a { text-decoration: none; color: inherit; }
   line-height: 1.9;
   overflow-wrap: break-word;
 }
+
+/* lang="ja" on <html> makes browsers apply CJK break-all to everything,
+   including the Latin hero title. Reset it explicitly. */
+:lang(ja) .hero-title {
+  word-break: normal;
+  overflow-wrap: normal;
+}
