@@ -1041,8 +1041,12 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* ===================== JAPANESE TYPOGRAPHY ===================== */
-:lang(ja) {
+:lang(ja) p,
+:lang(ja) li,
+:lang(ja) label,
+:lang(ja) blockquote,
+:lang(ja) .hero-subtitle {
   font-family: 'Noto Sans JP', sans-serif;
-  word-break: break-all;
   line-height: 1.9;
+  overflow-wrap: break-word;
 }
