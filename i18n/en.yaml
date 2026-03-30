@@ -32,7 +32,3 @@
   translation: "Submit"
 - id: read_more
   translation: "Read More"
-- id: lang_switch_label
-  translation: "日本語"
-- id: lang_switch_url
-  translation: "/ja/"

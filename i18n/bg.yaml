@@ -1,0 +1,34 @@
+- id: nav_book
+  translation: "За книгата"
+- id: nav_praise
+  translation: "Отзиви"
+- id: nav_author
+  translation: "За автора"
+- id: nav_media
+  translation: "Медии"
+- id: nav_podcast
+  translation: "Подкаст"
+- id: nav_contact
+  translation: "Контакт"
+- id: btn_learn_more
+  translation: "Научи повече"
+- id: btn_buy_now
+  translation: "КУПИ СЕГА"
+- id: label_email
+  translation: "Имейл"
+- id: placeholder_email
+  translation: "your@email.com"
+- id: btn_subscribe
+  translation: "Абонирай се"
+- id: label_first_name
+  translation: "Собствено име"
+- id: label_last_name
+  translation: "Фамилно име"
+- id: label_phone
+  translation: "Телефон"
+- id: label_comments
+  translation: "Коментари/Запитване"
+- id: btn_submit
+  translation: "Изпрати"
+- id: read_more
+  translation: "Прочети повече"

@@ -12,6 +12,11 @@ defaultContentLanguage = "en"
     languageName = "日本語"
     title = "ホーム - 書籍 - ディーン・グイダ"
     weight = 2
+  [languages.bg]
+    languageCode = "bg"
+    languageName = "Български"
+    title = "Начало - Книга - Дийн Гуида"
+    weight = 3
 
 [services]
   [services.googleAnalytics]

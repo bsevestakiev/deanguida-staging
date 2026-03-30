@@ -3,6 +3,7 @@
     <h2>{{ .Params.praise.heading }}</h2>
     {{ $testimonials := .Site.Data.testimonials }}
     {{ if eq .Site.Language.Lang "ja" }}{{ $testimonials = .Site.Data.ja.testimonials }}{{ end }}
+    {{ if eq .Site.Language.Lang "bg" }}{{ $testimonials = .Site.Data.bg.testimonials }}{{ end }}
     <div class="testimonial-carousel" id="testimonial-carousel">
       {{ range $i, $t := $testimonials }}
       <div class="testimonial{{ if eq $i 0 }} active{{ end }}">

@@ -14,7 +14,9 @@
         <li><a href="#media">{{ i18n "nav_media" }}</a></li>
         <li><a href="{{ .Site.Params.podcastURL }}" target="_blank" rel="noopener">{{ i18n "nav_podcast" }}</a></li>
         <li><a href="#contact">{{ i18n "nav_contact" }}</a></li>
-        <li class="lang-switch"><a href="{{ i18n "lang_switch_url" }}">{{ i18n "lang_switch_label" }}</a></li>
+        {{ range .Translations }}
+        <li class="lang-switch"><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+        {{ end }}
       </ul>
     </nav>
   </div>

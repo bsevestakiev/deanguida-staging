@@ -32,7 +32,3 @@
   translation: "送信"
 - id: read_more
   translation: "続きを読む"
-- id: lang_switch_label
-  translation: "English"
-- id: lang_switch_url
-  translation: "/"
