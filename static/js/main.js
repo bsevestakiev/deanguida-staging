@@ -58,6 +58,21 @@ siteNav.querySelectorAll('a[href^="#"]').forEach(link => {
   startAuto();
 })();
 
+// Language switcher dropdown
+const langSwitcher = document.querySelector('.lang-switcher');
+if (langSwitcher) {
+  const toggle = langSwitcher.querySelector('.lang-switcher-toggle');
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = langSwitcher.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+  document.addEventListener('click', () => {
+    langSwitcher.classList.remove('open');
+    toggle.setAttribute('aria-expanded', false);
+  });
+}
+
 // Smooth scroll offset for fixed nav
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
