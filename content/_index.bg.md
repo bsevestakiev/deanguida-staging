@@ -8,7 +8,7 @@ subscribe:
   subtext: "Абонирай се по-долу за предварителен преглед и новини за *When Grit Is Not Enough*."
 
 book:
-  heading: "За книгата"
+  heading: "За книгата TEST"
   tagline: "Готов ли си да изведеш бизнеса си на следващо ниво?"
   tagline_sub: "Тази книга е за теб."
   paragraphs:
